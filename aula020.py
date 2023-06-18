@@ -27,7 +27,8 @@ nome = str(input('Nome: '))
 titulo(f'  Olá {nome}')'''
 
 
-'''def soma(x, y):
+'''
+def soma(x, y):
     print('=-' * 10)
     print(f'{x} + {y} = {x + y}')
     print('=-' * 10)
@@ -37,3 +38,45 @@ titulo(f'  Olá {nome}')'''
 a = int(input('Entre com um número: '))
 b = int(input('Entre com outro número: '))
 soma(a, b)
+'''
+
+
+'''
+def contador(* num):
+    for v in num:
+        print(f'{v} ', end='')
+    print(' Fim!')
+
+
+contador(2, 10)
+contador(1, 2, 3, 4, 5, 6)
+contador(6, 8, 4)
+'''
+
+
+'''
+def dobra(lst):
+    pos = 0
+    while pos < len(lst):
+        lst[pos] *= 2
+        pos += 1
+
+
+lista = [5, 10, 15]
+print(lista)
+dobra(lista)
+print(lista)
+'''
+
+
+def soma(* valores):
+    s = 0
+    for v in valores:
+        s += v
+    print(f'A soma dos valores {valores} é igual a {s}')
+
+
+soma(5, 2)
+soma(10, 3, 4, 9)
+
+
